@@ -394,6 +394,34 @@
   color: var(--dark);
 }
 
+.owl-carousel .owl-nav {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.owl-carousel:hover .owl-nav {
+  width: 300px;
+  opacity: 1;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  position: relative;
+  color: var(--primary);
+  font-size: 45px;
+  transition: 0.5s;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+  color: var(--dark);
+}
+
 /*** Footer ***/
 
 .footer .btn.btn-link {
